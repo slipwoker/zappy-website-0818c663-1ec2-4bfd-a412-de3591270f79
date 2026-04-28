@@ -1,35 +1,52 @@
-# Business — Generative Engine Optimization Map
+# יהב ברזני ליווי חיילים משוחררים — Generative Engine Optimization Map
+
+> An online fitness and nutrition coaching service targeting Israeli men post-military service who have gained weight or lost their routine. The coach has a personal transformation story — losing 25 kg himself — which serves as a trust-building anchor. The brand voice is empathetic, direct, and emotionally connected to the audience's pain points (loss of discipline, poor eating habits, lack of consistency). The service emphasizes personalized training plans, custom nutrition guidance, daily support, and WhatsApp availability. The landing page is designed to convert through urgency, emotional resonance, and a clear call to action.
 
 ---
 
 ## Pages
 
 ### בית
-https://example.com
+https://yahav-barzani-livui-chayalim-m.zappy5.app
 מאמן אישי מוסמך המתמחה בליווי חיילים משוחררים. תוכנית אימונים אישית, תזונה מותאמת וליווי יומי בוואטסאפ. שיחת אבחון ראשונה — חינם, ללא התחייבות.
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://yahav-barzani-livui-chayalim-m.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://yahav-barzani-livui-chayalim-m.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://yahav-barzani-livui-chayalim-m.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About יהב ברזני ליווי חיילים משוחררים
+An online fitness and nutrition coaching service targeting Israeli men post-military service who have gained weight or lost their routine. The coach has a personal transformation story — losing 25 kg himself — which serves as a trust-building anchor. The brand voice is empathetic, direct, and emotionally connected to the audience's pain points (loss of discipline, poor eating habits, lack of consistency). The service emphasizes personalized training plans, custom nutrition guidance, daily support, and WhatsApp availability. The landing page is designed to convert through urgency, emotional resonance, and a clear call to action.
+
+## Services/Products
+- תוכנית אימונים אישית
+- תזונה מותאמת אישית
+- ליווי יומי
+- זמינות בוואטסאפ
+
+## Target Audience
+- גברים ישראלים אחרי שירות צבאי שעלו במשקל או איבדו שגרה ורוצים לרדת 5–10 קילו
+- גברים ישראלים אחרי צבא
+
+## Industry
+כושר ותזונה
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://yahav-barzani-livui-chayalim-m.zappy5.app/sitemap.xml
+- **Robots.txt**: https://yahav-barzani-livui-chayalim-m.zappy5.app/robots.txt
