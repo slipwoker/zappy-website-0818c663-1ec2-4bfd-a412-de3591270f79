@@ -1,6 +1,4 @@
-# יהב ברזני ליווי חיילים משוחררים — Generative Engine Optimization Map
-
-> An online fitness and nutrition coaching service targeting Israeli men post-military service who have gained weight or lost their routine. The coach has a personal transformation story — losing 25 kg himself — which serves as a trust-building anchor. The brand voice is empathetic, direct, and emotionally connected to the audience's pain points (loss of discipline, poor eating habits, lack of consistency). The service emphasizes personalized training plans, custom nutrition guidance, daily support, and WhatsApp availability. The landing page is designed to convert through urgency, emotional resonance, and a clear call to action.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -28,22 +26,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About יהב ברזני ליווי חיילים משוחררים
-An online fitness and nutrition coaching service targeting Israeli men post-military service who have gained weight or lost their routine. The coach has a personal transformation story — losing 25 kg himself — which serves as a trust-building anchor. The brand voice is empathetic, direct, and emotionally connected to the audience's pain points (loss of discipline, poor eating habits, lack of consistency). The service emphasizes personalized training plans, custom nutrition guidance, daily support, and WhatsApp availability. The landing page is designed to convert through urgency, emotional resonance, and a clear call to action.
-
-## Services/Products
-- תוכנית אימונים אישית
-- תזונה מותאמת אישית
-- ליווי יומי
-- זמינות בוואטסאפ
-
-## Target Audience
-- גברים ישראלים אחרי שירות צבאי שעלו במשקל או איבדו שגרה ורוצים לרדת 5–10 קילו
-- גברים ישראלים אחרי צבא
-
-## Industry
-כושר ותזונה
-
+## About Business
 ---
 
 # Additional Resources
