@@ -4797,6 +4797,325 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
+
+/* Cloned section from URL */
+/* ===== Contact Form Section ===== */
+.yhv-contact-form-section {
+  background: #f5f0eb;
+  padding: 80px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+}
+
+/* Wrapper — centers the card */
+.yhv-form-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Accent bar — brand color strip at top */
+.yhv-accent-bar {
+  height: 6px;
+  background: var(--gradient-primary, linear-gradient(135deg, #C17E3A 0%, #D4974F 100%));
+  border-radius: 8px 8px 0 0;
+}
+
+/* Main card */
+.yhv-main-card {
+  background: #ffffff;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 4px 24px rgba(182, 94, 60, 0.10), 0 1px 4px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+/* Form header */
+.yhv-form-header {
+  padding: 28px 28px 16px 28px;
+  border-bottom: 1px solid rgba(182, 94, 60, 0.12);
+}
+
+.yhv-form-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.yhv-form-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Form body */
+.yhv-form {
+  padding: 20px 28px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Individual field cards */
+.yhv-field-card {
+  background: #ffffff;
+  border: 1px solid rgba(182, 94, 60, 0.25);
+  border-radius: 10px;
+  padding: 18px 20px 16px 20px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.yhv-field-card:hover {
+  border-color: rgba(182, 94, 60, 0.50);
+  box-shadow: 0 2px 8px rgba(182, 94, 60, 0.08);
+}
+
+.yhv-field-card:focus-within {
+  border-color: var(--primary, #B65E3C);
+  box-shadow: 0 0 0 3px rgba(182, 94, 60, 0.12);
+}
+
+/* Labels */
+.yhv-field-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+
+.yhv-required {
+  color: var(--primary, #B65E3C);
+  margin-right: 2px;
+}
+
+/* Inputs — underline style */
+.yhv-field-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #d0d0d0;
+  border-radius: 0;
+  background: transparent;
+  padding: 8px 0 6px 0;
+  font-size: 0.97rem;
+  font-family: system-ui, sans-serif;
+  color: #1a1a1a;
+  direction: rtl;
+  outline: none;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.yhv-field-input::placeholder {
+  color: #aaa;
+  font-size: 0.93rem;
+}
+
+.yhv-field-input:focus {
+  border-bottom-color: var(--primary, #B65E3C);
+}
+
+/* Select specific overrides */
+.yhv-field-select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23B65E3C' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 4px center;
+  padding-left: 24px;
+}
+
+/* Textarea overrides */
+.yhv-field-textarea {
+  border: 1.5px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 10px 12px;
+  resize: vertical;
+  min-height: 90px;
+  line-height: 1.6;
+}
+
+.yhv-field-textarea:focus {
+  border-color: var(--primary, #B65E3C);
+}
+
+/* Error messages */
+.yhv-field-error {
+  display: block;
+  font-size: 0.8rem;
+  color: #c0392b;
+  margin-top: 6px;
+  min-height: 1em;
+}
+
+/* Form actions row */
+.yhv-form-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+/* Submit button */
+.yhv-btn-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gradient-primary, linear-gradient(135deg, #C17E3A 0%, #D4974F 100%));
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 10px rgba(182, 94, 60, 0.30);
+  white-space: nowrap;
+}
+
+.yhv-btn-submit:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(182, 94, 60, 0.40);
+}
+
+.yhv-btn-submit:active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.yhv-btn-submit:focus-visible {
+  outline: 3px solid rgba(182, 94, 60, 0.50);
+  outline-offset: 2px;
+}
+
+.yhv-btn-text {
+  font-size: 1rem;
+}
+
+.yhv-btn-icon {
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.yhv-btn-submit:hover .yhv-btn-icon {
+  transform: translateX(-3px);
+}
+
+/* Clear/reset button */
+.yhv-btn-clear {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 0.9rem;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+  padding: 8px 4px;
+  transition: color 0.2s ease;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.yhv-btn-clear:hover {
+  color: var(--primary, #B65E3C);
+}
+
+.yhv-btn-clear:focus-visible {
+  outline: 2px solid var(--primary, #B65E3C);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Success message */
+.yhv-success-msg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f0faf0;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  color: #2e7d32;
+  font-weight: 500;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease, padding 0.3s ease;
+}
+
+.yhv-success-msg.yhv-visible {
+  opacity: 1;
+  max-height: 80px;
+  padding: 14px 18px;
+}
+
+.yhv-success-icon {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Footer note */
+.yhv-form-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 680px) {
+  .yhv-contact-form-section {
+    padding: 50px 14px;
+  }
+
+  .yhv-form-header {
+    padding: 22px 18px 14px 18px;
+  }
+
+  .yhv-form-title {
+    font-size: 1.4rem;
+  }
+
+  .yhv-form {
+    padding: 16px 18px 22px 18px;
+    gap: 14px;
+  }
+
+  .yhv-field-card {
+    padding: 14px 16px 12px 16px;
+  }
+
+  .yhv-form-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .yhv-btn-submit {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 20px;
+  }
+
+  .yhv-btn-clear {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .yhv-form-title {
+    font-size: 1.25rem;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
