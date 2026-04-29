@@ -1130,7 +1130,7 @@
 
     <!-- Form Card -->
     <div class="contact-dark-card">
-      <form class="contact-dark-form" id="contactForm" novalidate="" aria-label="טופס יצירת קשר">
+      <div class="contact-dark-form" id="contactForm">
 
         <!-- Full Name -->
         <div class="contact-dark-field">
@@ -1139,7 +1139,7 @@
             <span class="contact-dark-icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-element-type="icon" data-element-id="icon-1777447145299-80xw457ta" data-icon-type="svg"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"></path></svg>
             </span>
-            <input class="contact-dark-input" type="text" id="fullName" name="fullName" placeholder="ישראל ישראלי" autocomplete="name" required="" aria-required="true">
+            <input class="contact-dark-input" type="text" id="fullName" name="fullName" placeholder="ישראל ישראלי" autocomplete="name" aria-label="שם מלא">
           </div>
           <span class="contact-dark-error" id="fullNameError" role="alert"></span>
         </div>
@@ -1151,7 +1151,7 @@
             <span class="contact-dark-icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-element-type="icon" data-element-id="icon-1777447145299-dg4erhgz9" data-icon-type="svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.09 4.18 2 2 0 0 1 5.07 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L9.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
             </span>
-            <input class="contact-dark-input contact-dark-input--ltr" type="tel" id="phone" name="phone" placeholder="050-0000000" autocomplete="tel" required="" aria-required="true">
+            <input class="contact-dark-input contact-dark-input--ltr" type="tel" id="phone" name="phone" placeholder="050-0000000" autocomplete="tel" aria-label="טלפון">
           </div>
           <span class="contact-dark-error" id="phoneError" role="alert"></span>
         </div>
@@ -1163,17 +1163,17 @@
             <span class="contact-dark-icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-element-type="icon" data-element-id="icon-1777447145299-0y7hktnpq" data-icon-type="svg"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle><line x1="12" y1="2" x2="12" y2="5"></line><line x1="12" y1="19" x2="12" y2="22"></line><line x1="2" y1="12" x2="5" y2="12"></line><line x1="19" y1="12" x2="22" y2="12"></line></svg>
             </span>
-            <select class="contact-dark-input contact-dark-select zappy-editable-dropdown" id="goal" name="goal" required="" aria-required="true">
+            <select class="contact-dark-input contact-dark-select zappy-editable-dropdown" id="goal" name="goal" aria-label="מטרת האימון">
               <option value="" disabled="" selected="">בחר את המטרה שלך</option>
-              <option value="strength">בניית כוח ומסה</option>
-              <option value="fat-loss">ירידה במשקל ושריפת שומן</option>
-              <option value="rehab">שיקום ספורטיבי</option>
-              <option value="endurance">שיפור סיבולת וכושר כללי</option>
-              <option value="mental">חיזוק נפשי ומנטלי</option>
-              <option value="other">אחר</option>
+              <option value="בניית כוח ומסה">בניית כוח ומסה</option>
+              <option value="ירידה במשקל ושריפת שומן">ירידה במשקל ושריפת שומן</option>
+              <option value="שיקום ספורטיבי">שיקום ספורטיבי</option>
+              <option value="שיפור סיבולת וכושר כללי">שיפור סיבולת וכושר כללי</option>
+              <option value="חיזוק נפשי ומנטלי">חיזוק נפשי ומנטלי</option>
+              <option value="אחר">אחר</option>
             </select>
             <span class="contact-dark-chevron" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" data-element-type="icon" data-element-id="icon-1777447145299-35ghu2a79" data-icon-type="svg"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </span>
           </div>
           <span class="contact-dark-error" id="goalError" role="alert"></span>
@@ -1186,7 +1186,7 @@
         </div>
 
         <!-- Submit -->
-        <button class="contact-dark-submit" type="submit" aria-label="שלח פרטים ליהב ברזני" data-element-type="button" data-element-id="btn-1777447145293-dfk3ua4cd" data-native-element="true">
+        <button class="contact-dark-submit" type="button" id="contactSubmitBtn" data-element-type="button" data-element-id="btn-1777447145293-dfk3ua4cd" data-native-element="true" onclick="(function(){var n=document.getElementById('fullName'),p=document.getElementById('phone'),g=document.getElementById('goal'),m=document.getElementById('message');var ok=true;document.querySelectorAll('.contact-dark-error').forEach(function(e){e.textContent='';});[n,p,g].forEach(function(el){if(el)el.style.borderColor='';});if(!n||!n.value.trim()){if(document.getElementById('fullNameError'))document.getElementById('fullNameError').textContent='נא להזין שם מלא';if(n)n.style.borderColor='#e53e3e';ok=false;}if(!p||p.value.trim().replace(/\D/g,'').length<9){if(document.getElementById('phoneError'))document.getElementById('phoneError').textContent='נא להזין מספר טלפון תקין';if(p)p.style.borderColor='#e53e3e';ok=false;}if(!g||!g.value){if(document.getElementById('goalError'))document.getElementById('goalError').textContent='נא לבחור מטרת אימון';if(g)g.style.borderColor='#e53e3e';ok=false;}if(!ok)return;var t='שלום יהב! אני מעוניין לשמוע עוד.\nשם: '+n.value.trim()+'\nטלפון: '+p.value.trim()+'\nמטרת האימון: '+g.value+(m&amp;&amp;m.value.trim()?'\nהודעה: '+m.value.trim():'');var s=document.getElementById('successMsg');if(s)s.removeAttribute('hidden');this.disabled=true;setTimeout(function(){window.open('https://wa.me/972548871669?text='+encodeURIComponent(t),'_blank');},600);}).call(this)">
           <span class="contact-dark-submit-text">שלח פרטים</span>
           <span class="contact-dark-submit-icon" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
@@ -1199,7 +1199,7 @@
           <span>הפרטים נשלחו בהצלחה! יהב יחזור אליך בקרוב.</span>
         </div>
 
-      </form>
+      </div>
     </div>
 
 <script>
