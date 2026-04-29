@@ -1202,11 +1202,119 @@
       </form>
     </div>
 
+<script>
+(function() {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var valid = true;
+
+    // Clear previous errors
+    var errors = form.querySelectorAll('.contact-dark-error');
+    errors.forEach(function(el) { el.textContent = ''; });
+    var inputs = form.querySelectorAll('.contact-dark-input');
+    inputs.forEach(function(el) { el.style.borderColor = ''; });
+
+    // Validate full name
+    var fullName = document.getElementById('fullName');
+    if (!fullName.value.trim()) {
+      document.getElementById('fullNameError').textContent = 'נא להזין שם מלא';
+      fullName.style.borderColor = '#e53e3e';
+      valid = false;
+    }
+
+    // Validate phone
+    var phone = document.getElementById('phone');
+    var phoneVal = phone.value.trim().replace(/\D/g, '');
+    if (!phoneVal || phoneVal.length < 9) {
+      document.getElementById('phoneError').textContent = 'נא להזין מספר טלפון תקין';
+      phone.style.borderColor = '#e53e3e';
+      valid = false;
+    }
+
+    // Validate goal
+    var goal = document.getElementById('goal');
+    if (!goal.value) {
+      document.getElementById('goalError').textContent = 'נא לבחור מטרת אימון';
+      goal.style.borderColor = '#e53e3e';
+      valid = false;
+    }
+
+    if (!valid) return;
+
+    // Build WhatsApp message
+    var message = document.getElementById('message') ? document.getElementById('message').value.trim() : '';
+    var goalText = goal.options[goal.selectedIndex].text;
+    var waText = 'שלום יהב! אני מעוניין לשמוע עוד.\n' +
+      'שם: ' + fullName.value.trim() + '\n' +
+      'טלפון: ' + phone.value.trim() + '\n' +
+      'מטרת האימון: ' + goalText +
+      (message ? '\nהודעה: ' + message : '');
+
+    // Show success message
+    var submitBtn = form.querySelector('.contact-dark-submit');
+    if (submitBtn) submitBtn.disabled = true;
+    var successMsg = document.getElementById('successMsg');
+    if (successMsg) successMsg.removeAttribute('hidden');
+
+    // Open WhatsApp after short delay
+    setTimeout(function() {
+      window.open('https://wa.me/972548871669?text=' + encodeURIComponent(waText), '_blank');
+    }, 600);
+  });
+})();
+</script>
+
     <!-- Decorative accents -->
     <div class="contact-dark-accent contact-dark-accent--1" aria-hidden="true"></div>
     <div class="contact-dark-accent contact-dark-accent--2" aria-hidden="true"></div>
   </div>
 </section>
+<script>
+(function() {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var valid = true;
+    form.querySelectorAll('.contact-dark-error').forEach(function(el) { el.textContent = ''; });
+    form.querySelectorAll('.contact-dark-input').forEach(function(el) { el.style.borderColor = ''; });
+    var fullName = document.getElementById('fullName');
+    if (!fullName || !fullName.value.trim()) {
+      var err = document.getElementById('fullNameError');
+      if (err) err.textContent = 'נא להזין שם מלא';
+      if (fullName) fullName.style.borderColor = '#e53e3e';
+      valid = false;
+    }
+    var phone = document.getElementById('phone');
+    if (!phone || phone.value.trim().replace(/\D/g,'').length < 9) {
+      var err2 = document.getElementById('phoneError');
+      if (err2) err2.textContent = 'נא להזין מספר טלפון תקין';
+      if (phone) phone.style.borderColor = '#e53e3e';
+      valid = false;
+    }
+    var goal = document.getElementById('goal');
+    if (!goal || !goal.value) {
+      var err3 = document.getElementById('goalError');
+      if (err3) err3.textContent = 'נא לבחור מטרת אימון';
+      if (goal) goal.style.borderColor = '#e53e3e';
+      valid = false;
+    }
+    if (!valid) return;
+    var message = document.getElementById('message');
+    var goalText = goal.options[goal.selectedIndex].text;
+    var waText = 'שלום יהב! אני מעוניין לשמוע עוד.\nשם: ' + fullName.value.trim() + '\nטלפון: ' + phone.value.trim() + '\nמטרת האימון: ' + goalText + (message && message.value.trim() ? '\nהודעה: ' + message.value.trim() : '');
+    var submitBtn = form.querySelector('.contact-dark-submit');
+    if (submitBtn) submitBtn.disabled = true;
+    var successMsg = document.getElementById('successMsg');
+    if (successMsg) successMsg.removeAttribute('hidden');
+    setTimeout(function() { window.open('https://wa.me/972548871669?text=' + encodeURIComponent(waText), '_blank'); }, 600);
+  });
+})();
+</script>
 
 
 
