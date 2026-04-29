@@ -5116,6 +5116,20 @@ body.accessibility-widget-visible ._access-menu {
     font-size: 1.25rem;
   }
 }
+
+.index-hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  backdrop-filter: blur(3px);
+  pointer-events: none;
+}
+
+.index-hero-section .index-hero-bg img {
+  filter: blur(4px) !important;
+  transform: scale(1.05);
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
